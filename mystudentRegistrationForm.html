@@ -1,0 +1,458 @@
+
+<html>
+	<head>
+		<script type="text/javascript" src="validate.js">
+		</script>
+		<title>
+			Studen Resgistration Form
+		</title>
+			
+		<Style>
+			body{
+					background-color: #ff34ee;
+					
+					border-top:5px groove green;
+					border-right:5px groove green;
+					border-bottom:5px groove green;
+					border-left:5px groove green;
+				}
+		   .main{
+					top:40px;
+					cellpadding:2;
+					cellspacing:5;
+					color:red;
+					background-color:#88ff88;
+					border:5px groove red;
+					position:absolute;
+					left:40%;
+					width:20%;
+					
+		   
+				}
+			h2  {
+					background-color:orange;
+					text-align:center;
+				}
+		</style>
+	</head>
+	
+	<body>
+		<form action="#" name="StudenRegistrationSystem" onsubmit="return validate();">
+		
+			<table class="main">
+				<tr>
+					 <td colspan="2" >
+						<h2>Student Registration Form</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Name :
+					</td>
+					<td>
+						<input type="text" name="sname" id="name" size="30">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Father Name :
+					</td>
+					<td>
+					<input type="text" name="fname" id="fname" size="30">
+					</td>	
+				</tr>
+				<tr>
+					<td>
+						Postal Address
+					</td>
+					<td>
+						<input type="text" name="postaladdress" id="paddress" size="30">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Personal Address 
+					</td>
+					<td>
+						<input type="text" name="personaladdress" id="peraddress" size="30">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Sex
+					</td>
+					<td>
+						<input type="radio" name="sex" id="s">Male
+						<input type="radio" name="sex" id="f">Female
+					</td>
+				</tr>
+				<tr>
+					<td>
+						City
+					</td>
+					<td>
+						<select name="city">
+							<option value="-1" selected>
+										Select...
+							</option>
+							<option value="newdelhi">
+										NewDelhi
+							</option>
+							<option value="hardoi">
+										Hardoi
+							</option>
+							<option value="rampur">
+											Rampur
+							</option>
+							<option value="Jonpur">
+											Jonpur
+							</option>
+							<option value="Lucknow">
+											Lucknow
+							</option>
+							<option value="Agra">
+											Agra
+							</option>
+							<option value="Karnatak">
+											Karnatak
+							</option>
+							<option value="Rajsthan">
+											Ranjsthan
+							</option>
+							<option value="Shehjanpur">
+											Shehjanpur
+							</option>
+							<option value="Alighar">
+											Alighar
+							</option>
+							<option value="Noida">
+											Noida
+							</option>
+							<option value="Gaziabad">
+										Gaziabad
+							</option>
+							<option value="Baliya">
+										Baliya
+							</option>
+							<option value="Vanarash">
+									Vanarash
+							</option>
+							<option value="Azamgra">
+									Azamgra
+							</option>
+							<option value="Gorakhpur">
+									Gorakhpur
+							</option>
+							<option value="Jhanshi">
+									Jhanshi
+							</option>
+							<option value="Muradabad">
+									Muradabad
+							</option>
+							<option value="Kanpur">
+									Kanpur
+							</option>
+							<option value="Bareilly">
+								Bareilly
+							</option>
+							<option value="Jhanshi">
+								Jhanshi
+							</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Course
+					</td>
+					<td>
+						<select name="Course">
+							<option value="-1" selected>
+								selecte....
+							</option>
+							<option value="btech" >
+								B.Tech
+							</option>
+							<option value="M.Tech" >
+								M.Tech
+							</option>
+							<option value="B.A." >
+								B.A.
+							</option>
+							<option value="M.A." >
+								M.A.
+							</option>
+							<option value=1" >
+								
+							<option value="B.Ed" >
+								B.Ed
+							</option>
+							<option value="M.Ed" >
+								M.Ed
+							</option>
+							<option value="B.Com" >
+								B.Com
+							</option>
+							<option value="M.Com" >
+								M.Com
+							</option>
+							<option value="B.Sc" >
+								B.Sc
+							</option>
+							<option value="M.Sc" >
+								M.Sc
+							</option>
+							<option value="M.Tech" >
+								M.Tech
+							</option>
+							<option value="B.Pharma" >
+								B.:Pharma
+							</option>
+							<option value="M.Pharma" >
+								M.Pharma
+							</option>
+							<option value="Nurshing" >
+								Nurshing
+							</option>
+							<option value="ITI" >
+								ITI
+							</option>
+							<option value="Polytechnich" >
+								Polytechnich
+							</option>
+							<option value="MBA" >
+								MBA
+							</option>
+							<option value="BBA" >
+								BBA
+							</option>
+							<option value="M.Pharma" >
+								M.Pharma
+							</option>
+							<option value="P.Hd" >
+								P.Hd
+							</option>
+							<option value="LLB" >
+								LLB
+							</option>
+							<option value="MBBS" >
+								MBBS
+							</option>
+							<option value="BAMS (Ayurvedic)" >
+								BAMS (Ayurvedic)
+							</option>
+							<option value="BHMS (Homoeopathy)" >
+								BHMS (Homoeopathy)
+							</option>
+							<option value="BUMS (Unani)" >
+								BUMS (Unani)
+							</option>
+							
+							<option value="B.VSC AH" >
+								B.VSC AH
+							</option>
+							<option value="BNYS" >
+								BNYS
+							</option>
+							<option value="Bachelor of Physiotherapy" >
+								BNYS
+							</option>
+							<option value="Dentis" >
+								Dentis
+							</option>
+							<option value="Schology" >
+								Schology
+							</option>
+							<option value="Teacher" >
+								Teacher
+							</option>
+							<option value="TET" >
+								TET
+							</option>
+							<option value="Professor" >
+								Professor
+							</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						District
+					</td>
+					<td>
+						<select name="District">
+							<option value="-1" selected>
+								select..
+							</option>
+							<option value="Bareilly">
+								Bareilly
+							</option>
+							<option value="Jhanshi">
+								Jhanshi
+							</option>
+							<option value="mirjapur">
+								Mirjapur
+							</option>
+							<option value="Faridpur">
+								Faridpur
+							</option>
+							<option value="Jharkhand">
+								Jharkhand
+							</option>
+							<option value="Malipur">
+								Malipur
+							</option><option value="JagdishNagar">
+								JagdishNagar
+							</option>
+							<option value="Badau">
+								Badau
+							</option>
+							<option value="Pilliphit">
+								Pillibhit
+							</option>
+							<option value="Ujann">
+								Ujaan
+							</option>
+							<option value="Ayodhya">
+								Ayodhya
+							</option>
+							<option value="Karamcharinagar">
+								C.B.Ganjh
+							</option>
+							<option value="Soheldev">
+								Soheldev
+							</option>
+							<option value="SA SA Ram">
+								Sa Sa Ram
+							</option><option value="Pratapghar">
+								Pratapgar
+							</option>
+							<option value="Buradabad">
+								Buradabad
+							</option>
+							<option value="Barlliya">
+								Balliya
+							</option>
+							<option value="Fatheghar">
+								Fatheghar
+							</option>
+							<option value="pitambarpur">
+								Pitambarpur
+							</option>
+							<option value="Bareilly Cant">
+								Cant
+							</option><option value="BadaGanv">
+								BadaGanve
+							</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						State
+					</td>
+					<td>
+						<Select name="state">
+							<option value="-1" selected>
+								select...
+							</option>
+							<option value="U.P.">
+								U.P.
+							</option>
+							<option value="M.P.">
+								M.P.
+							</option>
+							<option value="Uttrakhand">
+								Uttrakhand
+							</option>
+							<option value="rajsthan">
+								Rajsthan
+							</option>
+							<option value="Bihar">
+								Bihar
+							</option>
+							<option value="Maharashtra">
+								Maharashtra
+							</option><option value="Telngana">
+								Telngana
+							</option>
+							<option value="Chatisghar">
+								Chattisghar
+							</option>
+							<option value="Panjab">
+								Panjab
+							</option>
+							<option value="Bangal">
+								Bangal
+							</option>
+							<option value="Jharkhand">
+								Jharkhand
+							</option>
+							<option value="Tamilnadu">
+								Tamilnadu
+							</option>
+							<option value="Sikkim">
+								Sikkim
+							</option>
+							<option value="Patma">
+								Patna
+							</option>
+							<option value="Chainnai">
+								Chainnai
+							</option>
+							<option value="Hedrabad">
+								Hedrabad
+							</option>
+							<option value="Nagalend">
+								U.P.
+							</option>
+						</select>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Pin
+					</td>
+					<td>
+						<input type="text" name="pin" id="Pin">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Mail
+					</td>
+					<td>
+						<input type="text" name="mail" id="mailid">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						DOB
+					</td>
+					<td>
+						<input type="date" name="pin" id"Pin">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Mobile No.
+					</td>
+					<td>
+						<input type="text" name"mn" id="Mobile no.">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="Reset">
+					</td>
+					<td colspan="2">
+						 <input type="Submit" value="Submit Form">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+	
+
+</html>
